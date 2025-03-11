@@ -104,8 +104,8 @@ class MyTestCase(unittest.TestCase):
 
     def test_manymixed_delimiters(self):
         # Given
-        value = "//[##][%%%]\n2##2%%%2"
-        exp_value = 6
+        value = "//[##][%%%][!]\n2##2%%%2!2"
+        exp_value = 8
         # When
         result = task(value)
         # Then
